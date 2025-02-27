@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decypher Corp</title>
+    <!--<link rel="stylesheet" href="assets/styles/Material/MaterialIcons.css"><link rel="stylesheet" href="assets/styles/Kendo/kendo.common.min.css" /><link rel="stylesheet" href="assets/styles/Kendo/kendo.material.min.css" /><link rel="stylesheet" href="assets/styles/Material/material-web-component.css" />-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,700;1,900&family=Playfair+Display+SC:ital@0;1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Kendo/kendo.common.min.css"/>
+    <link rel="stylesheet" href="css/Kendo/kendo.material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<nav id="nav_contact">
+    <div id="div_nav_contact_logo_nav_container">
+        <div id="div_contact_logo">
+            <img id="img_contact_logo" class="decypher_logo" src="images/logos/img_logo_halfcolor.svg" alt="logo">
+        </div>
+        <div class="div_hamburger_nav_links_menu_icon" style="display:none;">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="div_hamburger_nav_links_menu" style="display:none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="case_studies.html">Case Studies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="div_nav_links">
+            <ul class="ul_nav_bar">
+                <li class="nav_item"><a class="nav_link" href="index.html">home</a></li>
+                <li class="nav_item"><a class="nav_link" href="services.html">services</a></li>
+                <li class="nav_item"><a class="nav_link" href="about.html">about</a></li>
+                <li><a href="case_studies.html">Case Studies</a></li>
+                <li class="nav_item"><a class="nav_link active" href="contact.html">contact</a></li>
+                <li class="nav_item">
+                    <img src="images/icons/img_icon_emailred2 1.svg">
+                    <a style="color: #FF6767;" class="nav_link"a href="mailto:Info@decyphercorp.com">Info@decyphercorp.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<a class="top-btn" style="display:none;">
+    <img class="img_top_btn" src="images/img_scroll_to_top.svg" alt="top_btn">
+</a>
+
+<div id="div_contact_content_container">
+    <div id="div_contact_header_banner">
+        <div id="div_contact_heading_primary_main">
+            <h1 id="h1_contact_help">How can we help?</h1>
+            <h2 id="h2_contact_help">Send us a message with your questions</h2>
+        </div>
+    </div>
+    <div class="div_contact_form_master_container">
+        <div id="div_contact_text">
+            <div class="div_contact_form_container">
+                <div class="div_contact_form_header">Contact Us</div>
+                <div id="div_contact_form">
+                    <div class="div_contact_form_content_row name_row">
+                        <div class="div_contact_form_content_name_row name_row_one">
+                            <label class="lbl_contact_form_content_title ">First Name<span class="sp_contact_form_content_asterisk" id="lbl_contact_form_content_asterisk_first_name">*</span></label>
+                            <input type="text" placeholder="First Name" name="first_name" class="ti_form_text ti_form_text_required" id="ti_first_name">
+                        </div>
+                        <div class="div_contact_form_content_name_row name_row_two">
+                            <label class="lbl_contact_form_content_title ">Last Name<span class="sp_contact_form_content_asterisk" id="lbl_contact_form_content_asterisk_last_name">*</span></label>
+                            <input type="text" placeholder="Last Name" name="last_name" class="ti_form_text ti_form_text_required" id="ti_last_name">
+                        </div>
+                    </div>
+                    <!--<div class="div_contact_form_content_row">
+                        <label class="lbl_contact_form_content_title ">Last Name<span class="sp_contact_form_content_asterisk" id="lbl_contact_form_content_asterisk_last_name">*</span></label>
+                        <input type="text" placeholder="Last Name" name="last_name" class="ti_form_text ti_form_text_required" id="ti_last_name">
+                    </div>-->
+                    <div class="div_contact_form_content_row">
+                        <label class="lbl_contact_form_content_title lbl_form_content_no_asterisk">Company</label>
+                        <input type="text" placeholder="Company" name="company" class="ti_form_text" id="ti_company">
+                    </div>
+                    <div class="div_contact_form_content_row">
+                        <label class="lbl_contact_form_content_title ">Email Address<span class="sp_contact_form_content_asterisk" id="lbl_contact_form_content_asterisk_email_address">*</span></label>
+                        <input type="email" placeholder="Email Address" name="email_address" class="ti_form_text ti_form_text_required" id="ti_email_address">
+                    </div>
+                    <div class="div_contact_form_content_row">
+                        <label class="lbl_contact_form_content_title lbl_form_content_no_asterisk">Phone Number</label>
+                        <input type="tel" placeholder="(000) 000 000" name="phone_number" class="ti_form_text" id="ti_phone_number">
+                    </div>
+                    <div class="div_contact_form_content_message_container">
+                        <textarea name="message" rows="4" cols="50" class="ti_form_text" placeholder="Message..." maxlength="1000" id="ta_message"></textarea>
+                    </div>
+                    <div id="div_contact_form_content_confirmation_text">
+                        <span id="sp_contact_form_content_confirmation_text" style="display: none;">Thank you for contacting us. We will get back to you as soon as possible.</span>
+                        <span id="sp_contact_required_first_name_message" style="color: red; display: none;"></span>
+                        <span id="sp_contact_required_last_name_message" style="color: red; display: none;"></span>
+                        <span id="sp_contact_required_email_message" style="color: red; display: none;"></span>
+
+                    </div>
+                    <div class="div_contact_form_content_send_container">
+                            <button type="button" class="btn_contact_form_content_clear" class="ti_form_text" id="btn_contact_form_content_clear">Clear Form</button>
+                            <button type="button" class="btn_contact_form_content_send" class="ti_form_text" id="btn_contact_form_content_send">Send Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="div_contact_text_container">
+                 <span class="sp_contact_help">We are happy to answer any of your questions. For inquiries, please fill out the form or call us, and we will be in touch.</span>
+                <span class="sp_contact_help">Please allow 1 to 2 business days for response.</span>
+                <div class="div_contact_help_contact">
+                    <div class="div_contact_help_contact_container">
+                        <div class="div_contact_help_icon">
+                            <img src="images/icons/img_icon_mapblue 2.svg">
+                        </div>
+                        <span class="sp_contact_help_contact">3010 Coolidge Hwy, Berkley, MI 48072</span>
+                    </div>
+                </div>
+
+                <div class="div_contact_help_contact">
+                    <div class="div_contact_help_contact_container">
+                        <div class="div_contact_help_icon">
+                            <img src="images/icons/img_icon_emailblue 2.svg">
+                        </div>
+                        <span class="sp_contact_help_contact">
+                            <a href="mailto:Info@decyphercorp.com">Info@decyphercorp.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr_contact_main">
+
+    <div id="div_contact_map">
+        <div id="div_contact_map_container">
+            <div id="map" class="one">
+                <iframe id="if_contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.61402765823!2d-83.18570678431854!3d42.49975763426012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c8a1a12c72a7%3A0xa1932ba23fa7d3f6!2sDecypher%20Corporation!5e0!3m2!1sen!2sus!4v1676580971484!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="decypher_bldg" class="two">
+                <img src="images/img_building_outside.svg" class="two">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer_contact_nav">
+        <div id="div_footer_contact_nav_container">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="case_studies.html">Case Studies</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="div_footer_contact_social_media">
+            <div class="div_icon_social_container">
+                <a href="https://www.linkedin.com/company/decypher-corporation/mycompany/" target="_blank">
+                    <img class="img_icon_social_link" src="images/social_media_icons/img_icon_social_linkedin.svg">
+                    <img class="img_icon_social_link_hover" src="images/social_media_icons/img_icon_social_linkedin_hover.svg">
+                </a>
+                <a href="https://www.facebook.com/DecypherCorp" target="_blank">
+                    <img class="img_icon_social_fb" src="images/social_media_icons/img_icon_social_fb.svg">
+                    <img class="img_icon_social_fb_hover" src="images/social_media_icons/img_icon_social_fb_hover.svg">
+
+                </a>
+                <a href="https://twitter.com/DecypherCorp" target="_blank">
+                    <img class="img_icon_social_twitter" src="images/social_media_icons/img_icon_social_twitter.svg">
+                    <img class="img_icon_social_twitter_hover" src="images/social_media_icons/img_icon_social_twitter_hover.svg">
+                </a>
+            </div>
+        </div>
+        <div id="div_footer_contact_terms_copy_container">
+            <span class="sp_footer_copyright" id="sp_footer_copyright">Copyright © 1999-2024 Decypher Corporation - All Rights Reserved</span>
+        </div>
+    </footer>
+</div>
+
+
+<script src="js/jquery.3.6.0.min.js"></script>
+<script src="js/kendo.web.min.js"></script>
+<script src="js/kendo.all.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

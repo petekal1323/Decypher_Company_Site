@@ -1,0 +1,24 @@
+{
+  "name": "decypher-website-service",
+  "version": "1.0.0",
+  "description": "Decypher Website Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Decypher Corporation",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/secret-manager": "4.2.1",
+    "body-parser": "1.20.2",
+    "cookie-parser": "1.4.6",
+    "express": "4.18.2",
+    "nodejs-nodemailer-outlook": "1.2.4",
+    "nodemon": "^3.1.0",
+    "path": "0.12.7",
+    "swiper": "^11.0.6"
+  }
+}

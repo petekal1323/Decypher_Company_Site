@@ -1,0 +1,886 @@
+#nav_about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  margin: 0 !important;
+  background-color: white;
+  margin: 0;
+  color: black;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
+
+  #div_nav_about_info_contact_container {
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 10px;
+
+    .div_nav_about_info_contact_email_container,
+    .div_nav_about_info_contact_phone_container,
+    .div_nav_about_info_contact_address_container {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+
+      .div_about_info_contact_email_icon,
+      .div_about_info_contact_phone_icon,
+      .div_about_info_contact_address_icon {
+        img {
+          height: 16px;
+        }
+      }
+
+      .div_about_info_contact_email_text,
+      .div_about_info_contact_phone_text,
+      .div_about_info_contact_address_text {
+        display: flex;
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 10px 5px;
+        font-feature-settings: "pnum" on, "lnum" on;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:visited {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  #div_nav_about_logo_nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    //width: 85%;
+    #div_about_logo {
+      .decypher_logo {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+#div_about_content_container {
+  position: relative;
+  height: calc(100% - 32rem);
+  min-height: 20rem;
+
+  #div_about_header_banner {
+    height: calc(85vh - 160px);
+    min-height: 500px;
+    background-image: url("../images/img_office3.svg"),
+      linear-gradient(
+        to right,
+        rgba(61, 61, 61, 0.6),
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(61, 61, 61, 0.6)
+      );
+    background-blend-mode: multiply; /* Optional: Adjust blend mode for a better effect */
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    //height: 65vh;
+    clip-path: polygon(100% 0, 100% 65%, 50% 45%, 0 65%, 0 0);
+    color: white;
+
+    #div_about_heading_primary_main {
+      position: relative;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      text-align: center;
+      #h1_about_know_us {
+        font-size: 40px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+      #h2_about_know_us {
+        font-size: 30px;
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 5px;
+        text-transform: inherit;
+      }
+    }
+  }
+
+  #div_about_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 40px;
+    height: auto;
+
+    #h1_about_our_team {
+      font-size: 30px;
+      margin-top: 0%;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #3d3d3d;
+    }
+
+    #h2_about_our_team {
+      font-size: 20px;
+      margin-top: 30px;
+      font-family: "Playfair Display";
+      font-style: italic;
+      font-weight: 400;
+      color: #999999;
+    }
+  }
+
+  /*#img_about_icon_teamwork {
+    height: 7rem;
+    margin: 60px auto;
+  }*/
+
+  /*.img_about_team_photo_container {
+    background-image: url("../images/img_office3.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vh;
+  }*/
+}
+
+.div_main_about_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "one   two   three   four";
+  margin: 0 auto 50px;
+  width: 90%;
+  height: auto;
+
+  .div_main_about_description {
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+
+    .img_main_about {
+      height: 120px;
+    }
+
+    .h1_main_about_title {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      font-variant: all-small-caps;
+      line-height: normal;
+      color: #3d3d3d;
+      margin-top: 20px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .hr_main_about_title {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      border-bottom: 3px solid #1595f2;
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    .sp_main_about_text {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      color: #3d3d3d;
+      padding-top: 15px;
+      width: 275px;
+    }
+  }
+
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+}
+
+#img_about_icon_teamwork {
+  width: 25%;
+  margin: 45px auto 0;
+}
+
+#div_about_teamwork {
+  width: 100%;
+  background-color: #3d3d3d;
+  height: 18.5rem;  // Adjust height based on desired look
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%, 0% 0%);
+  margin-top: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  #h1_about_teamwork {
+    font-size: 50px;
+    color: #ff6767;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-variant: all-small-caps;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+
+  #sp_about_teamwork_text {
+    margin: 5px 0;
+    width: 75%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  #h2_about_teamwork {
+    margin: 0px 0;
+    width: 45%;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-variant: all-small-caps;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
+.div_about_us {
+  height: auto;
+  width: 90%;
+  margin: 10px auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-areas:
+    "one   two"
+    "three four";
+
+  .one {
+    grid-area: one;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center !important;
+    align-self: flex-start;
+    h1 {
+      color: #3d3d3d;
+      text-align: center;
+      line-height: 50px;
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 50px;
+      font-variant: all-small-caps;
+      letter-spacing: 1px;
+    }
+    img {
+      height: 50px;
+      margin: auto;
+      align-items: center;
+      margin-top: 10px;
+    }
+    span {
+      display: block;
+      line-height: 1.5;
+      font-size: 14px;
+      margin: 10px auto;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+      width: 80%;
+    }
+  }
+  .two {
+    grid-area: two;
+    display: flex;
+    justify-self: center;
+  }
+
+  .three {
+    grid-area: three;
+    display: flex;
+    justify-self: center !important;
+  }
+
+  .four {
+    grid-area: four;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center !important;
+    h1 {
+      color: #3d3d3d;
+      text-align: center;
+      line-height: 50px;
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 50px;
+      font-variant: all-small-caps;
+      letter-spacing: 1px;
+    }
+
+    img {
+      height: 50px;
+      margin: auto;
+      align-items: center;
+      margin-top: 10px;
+    }
+    span {
+      display: block;
+      line-height: 1.5;
+      font-size: 14px;
+      margin: 10px auto;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+      width: 80%;
+    }
+  }
+  .div_about_us_right_row_one,
+  .div_about_us_left_row_two {
+    img {
+      width: 85%;
+      margin: auto;
+    }
+  }
+}
+
+#div_about_exp_services {
+  background-color: #3d3d3d;
+  height: 280px;
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
+
+  #div_about_exp_services_flex_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    padding: 110px 0 10px;
+    #h1_about_exp_services {
+      font-size: 50px;
+      text-align: center;
+      color: #ff6767;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-variant: all-small-caps;
+      letter-spacing: 1px;
+      line-height: 40px;
+    }
+    #sp_about_exp_services_text {
+      display: block;
+      margin: 10px auto 20px;
+      font-size: 17px;
+      text-align: left;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      line-height: 25px;
+    }
+  }
+}
+
+#btn_white_about {
+  a {
+    display: block;
+    border: none;
+    border-radius: 7px;
+    background: #fff;
+    color: #ff6767;
+    padding: 10px 10px 10px 10px;
+    width: 160px;
+    height: 45px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-variant: all-small-caps;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    &:hover {
+      background: #ff6767;
+      color: #fff;
+    }
+  }
+}
+
+#footer_about_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #3d3d3d;
+  width: 100%;
+
+  #div_about_footer_divider {
+    background-color: #fff;
+    height: 1px;
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  #div_footer_about_nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 130px;
+
+    a {
+      font-family: "Raleway", sans-serif;
+      font-variant: all-small-caps;
+      letter-spacing: 3px;
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  #div_footer_about_social_media {
+    background-color: #494949;
+    width: 100%;
+    padding: 20px 0;
+
+    .div_icon_social_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 125px;
+      margin: 0 auto;
+
+      a {
+        position: relative; // Ensure that hover images are positioned correctly
+
+        img {
+          width: 30px;
+        }
+
+        // Hide hover images by default
+        img[class*="_hover"] {
+          display: none;
+        }
+
+        // Show hover image on hover and hide the default image
+        &:hover {
+          img[class*="_hover"] {
+            display: flex; // Use 'inline' to ensure it matches the display type of the original image
+          }
+          img:not([class*="_hover"]) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  #div_footer_about_terms_copy_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 5px;
+
+    #div_footer_about_terms {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 30px;
+
+      #h1_footer_about_terms {
+        color: #fff;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 20px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .sp_footer_copyright {
+      width: 95%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      font-family: "Raleway";
+      font-weight: 400;
+      font-size: 10px;
+      //line-height: 50px;
+      letter-spacing: 1px;
+      font-feature-settings: "pnum" on, "lnum" on;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .div_about_us {
+    height: auto !important;
+    min-height: 85rem !important;
+    max-height: 85rem !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+    grid-template-areas:
+        "one"
+        "two"
+        "four"
+        "three" !important;
+
+    #h1_about_us_left,
+    #h1_about_us_right {
+      font-size: 40px !important;
+    }
+
+    span {
+      text-align: center !important;
+      margin: 10px auto !important;
+    }
+
+    img {
+      margin: 0 auto !important;
+
+    }
+    .one{
+      margin-bottom: 20px !important;
+      align-self: center !important;
+    }
+    .four{
+      margin: 20px auto !important;
+      align-self: center !important;
+    }
+    #img_about_element_line_circle_left,
+    #img_about_element_line_circle_right{
+      height: 40px !important;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+  #div_footer_about_nav_container {
+    width: 75% !important;
+  }
+}
+
+@media only screen and (max-width: 1175px){
+  #div_about_teamwork{
+    padding: 1.5rem !important;
+    height: 19.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  /*.img_about_team_photo_container {
+    height: 65vh !important;
+  }*/
+  .div_main_about_container {
+    //margin: 5rem auto 0 !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    grid-template-areas:
+      "one     two"
+      "three   four";
+    .div_main_about_description {
+      margin: .5rem auto !important;
+    }
+  }
+  #img_about_icon_teamwork {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  /*.img_about_team_photo_container {
+    height: 55vh !important;
+  }*/
+}
+
+@media only screen and (max-width: 992px) {
+  #div_about_content_container {
+    height: auto !important;
+    //margin-bottom: 12rem !important;
+
+    #div_about_header_banner {
+      clip-path: unset !important;
+      height: auto !important;
+      min-height: 350px !important;
+      background-position: center 3rem !important;
+
+      #div_about_heading_primary_main {
+        padding: 0 !important;
+        top: 6rem !important;
+      }
+      #div_about_heading_primary_main {
+        padding: 0 !important;
+        top: 11rem !important;
+        #h1_about_know_us {
+          font-size: 40px !important;
+        }
+        #h2_about_know_us {
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+
+  #div_about_teamwork,
+  #div_about_exp_services {
+    clip-path: unset !important;
+    #div_about_exp_services_flex_container {
+      padding: 35px 0 0 !important;
+    }
+  }
+  #div_about_teamwork {
+    height: auto !important;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem 2rem !important;
+
+    #h1_about_teamwork {
+      font-size: 40px !important;
+    }
+
+    #sp_about_teamwork_text {
+      width: 95% !important;
+    }
+  }
+  .div_about_us {
+    margin: 10px auto 40px !important;
+    #h1_about_us_left,
+    #h1_about_us_right {
+      font-size: 35px !important;
+    }
+  }
+  #div_footer_about_nav_container {
+    width: 100% !important;
+  }
+  #img_about_icon_teamwork {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #div_about_content_container {
+    #div_about_header_banner {
+      #div_about_heading_primary_main {
+        #h1_about_know_us {
+          font-size: 35px !important;
+        }
+        #h2_about_know_us {
+          font-size: 20px !important;
+        }
+      }
+    }
+    #img_about_icon_teamwork {
+      height: 8rem !important;
+      padding: 5px;
+      margin-bottom: 4rem !important;
+    }
+  }
+  .img_about_team_photo_container {
+    height: 55vh !important;
+  }
+
+  .div_main_about_container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+    grid-template-areas: "one" "two" "three" "four" !important;
+    //margin: 0 auto !important;
+  }
+  .div_main_about_description {
+    img {
+      height: 80px !important;
+    }
+  }
+  #div_about_teamwork {
+    #h1_about_timeline {
+      font-size: 40px !important;
+    }
+
+    #sp_about_timeline_text {
+      width: 75% !important;
+      font-size: 16px !important;
+    }
+  }
+
+  #div_about_exp_services{
+    height: 175px !important;
+  }
+  #div_about_exp_services_flex_container {
+    #h1_about_exp_services {
+      font-size: 40px !important;
+    }
+
+    #sp_about_exp_services_text {
+      font-size: 15px !important;
+      text-align: center !important;
+    }
+  }
+
+  #div_about_exp_services {
+    #div_about_exp_services_flex_container {
+      padding: 35px 0 !important;
+    }
+  }
+
+  #img_about_icon_teamwork {
+    width: 55% !important;
+  }
+  #div_footer_about_nav_container {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .img_about_team_photo_container {
+    height: 50vh !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .img_about_team_photo_container {
+    height: 40vh !important;
+  }
+  #img_about_icon_teamwork {
+    width: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img_about_team_photo_container {
+    height: 27vh !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  /*.div_main_about_container {
+    margin: 5rem auto 0 !important;
+  }*/
+}
+
+@media only screen and (max-width: 530px) {
+  #div_about_heading_primary_main {
+    top: 3.5rem !important;
+    width: 75% !important;
+    line-height: normal !important;
+  }
+  #div_about_teamwork{
+    #h2_about_teamwork{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .div_about_us {
+    //height: 110rem !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 568px) {
+  #div_nav_about_info_contact_container {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    //width: 60% !important;
+  }
+
+  #h2_about_our_team {
+    font-size: 18px !important;
+    margin: 10px auto 0 !important;
+    text-align: center;
+  }
+}
+
+/*
+@media only screen and (min-width: 375px){
+  .div_about_us {
+    span{
+      text-align: center !important;
+      width: 26rem !important;
+    }
+    img{
+    margin: 0 auto !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .div_about_us {
+    span{
+      text-align: center !important;
+      width: 31rem !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .div_about_us {
+    span{
+      text-align: center !important;
+      width: 36rem !important;
+    }
+  }
+}*/
+
+/*@media only screen and (min-width: 1300px) {
+  .div_about_us {
+    span {
+      text-align: center !important;
+    }
+  }
+}*/
